@@ -21,3 +21,31 @@ function createDreamTeam(/* members */) {
 module.exports = {
   createDreamTeam
 };
+
+
+function createDreamTeam(members) {
+  if(Array.isArray(members) == false){
+    return false
+  }
+  let result = ''
+  for(let elem of members){
+    if(typeof(elem) == 'string'){
+      result += getLetter(elem)
+    }
+  }
+  result = result.length > 0 ? result.split('').sort().join('') : false
+  return result
+  
+}
+
+
+
+function getLetter(elem){
+  for(let i = 0; i<elem.length; i++){
+    if(elem[i] != ' '){
+      return elem[i].toUpperCase()
+    }
+  }
+}
+
+
