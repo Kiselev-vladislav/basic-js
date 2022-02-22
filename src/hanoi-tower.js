@@ -22,3 +22,18 @@ function calculateHanoi(/* disksNumber, turnsSpeed */) {
 module.exports = {
   calculateHanoi
 };
+
+function calculateHanoi(num, time) {
+  let one = 1
+  let turn = 1
+  while (one != num){
+      turn = turn * 2 + 1
+      one++
+  }
+  let second = Math.floor(turn / (time/60/60) )
+  let obj = {
+      'turns': turn,
+      'seconds': second
+  }
+ return obj
+}
