@@ -30,15 +30,3 @@ module.exports = {
 
 
 
-//   calculateDepth(arr){
-//     let max = 0;
-//   for(let elem of arr){
-//       if(Array.isArray(elem)){
-//           max = Math.max(calculateDepth(elem), max)
-//       }
-//   }
-//   return max + 1
-//   }
-
-
-// }
