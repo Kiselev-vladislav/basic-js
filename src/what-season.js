@@ -20,19 +20,19 @@ module.exports = {
   getSeason
 };
 
-function getSeason(data){
-  if(data == undefined){
-      return 'Unable to determine the time of year!'
-  }
-  if(data.getTime == undefined){
-      return "Invalid date!"
-  }
-  if(toString.call(data) != '[object Date]'){
-      return "Invalid date!"
-  }
-  let numMonth = data.getMonth()
-  if(numMonth >= 2 && numMonth <= 4) return 'spring';
-  if(numMonth >= 5 && numMonth <= 7) return 'summer';
-  if(numMonth >= 8 && numMonth <= 10) return 'autumn';
-  else return 'winter'
-}
+// function getSeason(data){
+//   if(data == undefined){
+//       return 'Unable to determine the time of year!'
+//   }
+//   if(data.getTime == undefined){
+//       return "Invalid date!"
+//   }
+//   if(toString.call(data) != '[object Date]'){
+//       return "Invalid date!"
+//   }
+//   let numMonth = data.getMonth()
+//   if(numMonth >= 2 && numMonth <= 4) return 'spring';
+//   if(numMonth >= 5 && numMonth <= 7) return 'summer';
+//   if(numMonth >= 8 && numMonth <= 10) return 'autumn';
+//   else return 'winter'
+// }
